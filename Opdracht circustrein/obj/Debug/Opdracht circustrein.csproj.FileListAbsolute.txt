@@ -1,0 +1,18 @@
+C:\Users\freek\source\repos\Opdracht circustrein\Opdracht circustrein\bin\Debug\Opdracht circustrein.exe.config
+C:\Users\freek\source\repos\Opdracht circustrein\Opdracht circustrein\bin\Debug\Opdracht circustrein.exe
+C:\Users\freek\source\repos\Opdracht circustrein\Opdracht circustrein\bin\Debug\Opdracht circustrein.pdb
+C:\Users\freek\source\repos\Opdracht circustrein\Opdracht circustrein\obj\Debug\Opdracht circustrein.csprojAssemblyReference.cache
+C:\Users\freek\source\repos\Opdracht circustrein\Opdracht circustrein\obj\Debug\Opdracht_circustrein.Form1.resources
+C:\Users\freek\source\repos\Opdracht circustrein\Opdracht circustrein\obj\Debug\Opdracht_circustrein.Properties.Resources.resources
+C:\Users\freek\source\repos\Opdracht circustrein\Opdracht circustrein\obj\Debug\Opdracht circustrein.csproj.GenerateResource.cache
+C:\Users\freek\source\repos\Opdracht circustrein\Opdracht circustrein\obj\Debug\Opdracht circustrein.exe
+C:\Users\freek\source\repos\Opdracht circustrein\Opdracht circustrein\obj\Debug\Opdracht circustrein.pdb
+C:\Users\freek\source\repos\Opdracht CirustreinV2\Opdracht circustrein\bin\Debug\Opdracht circustrein.exe.config
+C:\Users\freek\source\repos\Opdracht CirustreinV2\Opdracht circustrein\bin\Debug\Opdracht circustrein.exe
+C:\Users\freek\source\repos\Opdracht CirustreinV2\Opdracht circustrein\bin\Debug\Opdracht circustrein.pdb
+C:\Users\freek\source\repos\Opdracht CirustreinV2\Opdracht circustrein\obj\Debug\Opdracht circustrein.csprojAssemblyReference.cache
+C:\Users\freek\source\repos\Opdracht CirustreinV2\Opdracht circustrein\obj\Debug\Opdracht_circustrein.Properties.Resources.resources
+C:\Users\freek\source\repos\Opdracht CirustreinV2\Opdracht circustrein\obj\Debug\Opdracht circustrein.csproj.GenerateResource.cache
+C:\Users\freek\source\repos\Opdracht CirustreinV2\Opdracht circustrein\obj\Debug\Opdracht circustrein.exe
+C:\Users\freek\source\repos\Opdracht CirustreinV2\Opdracht circustrein\obj\Debug\Opdracht circustrein.pdb
+C:\Users\freek\source\repos\Opdracht CirustreinV2\Opdracht circustrein\obj\Debug\Opdracht_circustrein.Circustrein.resources
