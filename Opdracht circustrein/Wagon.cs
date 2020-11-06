@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Opdracht_circustrein
 {
-    class Wagon
+    public class Wagon
     {
         private List<Dier> dieren;
         private int ruimte;
@@ -19,21 +19,13 @@ namespace Opdracht_circustrein
             nummer = teller;
         }
 
-        public bool kanDierInWagon(Dier inputDier)
+        public bool stopDierInWagon(Dier inputDier)
         {
-            bool kanDierInWagonBool = true;
-            foreach (Dier dier in dieren)
+            if (kanDierBijWagonDieren(inputDier) == true)
             {
-                if ((dier.Voer == Dier.voer.vlees && inputDier.Grootte <= dier.Grootte) || (inputDier.Voer == Dier.voer.vlees && inputDier.Grootte >= dier.Grootte))
+                if (isErRuimte(inputDier) == true)
                 {
-                    kanDierInWagonBool = false;
-                }
-            }
-            if (kanDierInWagonBool == true)
-            {
-                int vrijeRuimte = ruimte - inputDier.getRuimte();
-                if (vrijeRuimte >= 0)
-                {
+                    voegDierAanWagon(inputDier);
                     return true;
                 }
                 else
@@ -47,27 +39,51 @@ namespace Opdracht_circustrein
             }
         }
 
-        public void voegDierAanWagon(Dier dier)
+        private bool isErRuimte(Dier inputDier)
         {
-            dieren.Add(dier);
-            ruimte -= dier.getRuimte();
+            int vrijeRuimte = ruimte - inputDier.getGrootte();
+
+            if (vrijeRuimte >= 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
-        public int vrijeRuimteWagon()
+        private bool kanDierBijWagonDieren(Dier inputDier)
+        {
+            foreach (Dier dier in dieren)
+            {
+                if ((dier.Voer == Dier.voer.vlees && inputDier.Grootte <= dier.Grootte) || (inputDier.Voer == Dier.voer.vlees && inputDier.Grootte >= dier.Grootte))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void voegDierAanWagon(Dier dier)
+        {
+            dieren.Add(dier);
+            ruimte -= dier.getGrootte();
+        }
+
+        public int getVrijeRuimte()
         {
             return ruimte;
         }
 
-        public List<Dier> getDieren()
+        public IReadOnlyList<Dier> getDieren()
         {
-            return dieren;
+            return dieren.AsReadOnly();
         }
 
         public override string ToString()
         {
             return "Wagon " + Convert.ToString(nummer);
         }
-
-
     }
 }

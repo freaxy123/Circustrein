@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Opdracht_circustrein
 {
-    class Trein
+    public class Trein
     {
         private List<Wagon> trein;
         private int teller = 1;
@@ -20,30 +20,35 @@ namespace Opdracht_circustrein
         {
             foreach(Dier dier in dieren)
             {
-                bool kanDierInWagon = false;
-                foreach(Wagon wagon in trein)
+                if(stopDierInWagon(dier) == false)
                 {
-                    if(wagon.kanDierInWagon(dier) == true)
-                    {
-                        kanDierInWagon = true;
-                        wagon.voegDierAanWagon(dier);
-                        break;
-                    }
-                }
-                if(kanDierInWagon == false)
-                {
-                    Wagon nieuweWagon = new Wagon(teller++);
-                    nieuweWagon.voegDierAanWagon(dier);
-                    trein.Add(nieuweWagon);
+                    wagonToevoegen(dier);
                 }
             }
         }
 
-        public List<Wagon> getTrein()
+        private bool stopDierInWagon(Dier dier)
         {
-            return trein;
+            foreach (Wagon wagon in trein)
+            {
+                if (wagon.stopDierInWagon(dier) == true)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
+        private void wagonToevoegen(Dier dier)
+        {
+                Wagon nieuweWagon = new Wagon(teller++);
+                nieuweWagon.stopDierInWagon(dier);
+                trein.Add(nieuweWagon);
+        }
 
+        public IReadOnlyList<Wagon> getTrein()
+        {
+            return trein.AsReadOnly();
+        }
     }
 }

@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Opdracht_circustrein
 {
-    class Dier
+    public class Dier
     {
-        //Enums
         public enum voer
         {
             vlees,
@@ -31,7 +30,7 @@ namespace Opdracht_circustrein
             Grootte = inputGrootte;
         }
 
-        public int getRuimte()
+        public int getGrootte()
         {
             return (int)this.Grootte;
         }
@@ -60,7 +59,6 @@ namespace Opdracht_circustrein
             {
                 text += " Vleeseter";
             }
-
             return text;
         }
     }

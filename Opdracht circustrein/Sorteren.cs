@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Opdracht_circustrein
 {
-    class Userinterface
+    public class Sorteren
     {
-        private List<Dier> dieren;
+        private List<Dier> dierenInput;
 
-        public Userinterface()
+        public Sorteren()
         {
-            dieren = new List<Dier>();
+            dierenInput = new List<Dier>();
         }
 
-        public void voegDierAanLijst(Dier dier)
+        public void voegDierAanInputLijst(Dier dier)
         {
-            dieren.Add(dier);
+            dierenInput.Add(dier);
         }
 
-        public List<Dier> getLijstDieren()
+        public List<Dier> getLijstInputDieren()
         {
-            return dieren;
+            return dierenInput;
         }
 
         public List<Dier> sorteerLijst(List<Dier> ongesorteerd)
@@ -38,7 +38,7 @@ namespace Opdracht_circustrein
             return gesorteerd;
         }
 
-        public List<Dier> sorteerOpVoer(List<Dier> ongesorteerd, Dier.voer Voer)
+        private List<Dier> sorteerOpVoer(List<Dier> ongesorteerd, Dier.voer Voer)
         {
             List<Dier> gesorteerd = new List<Dier>();
             foreach (Dier dier in ongesorteerd)
@@ -51,7 +51,7 @@ namespace Opdracht_circustrein
             return gesorteerd;
         }
 
-        public List<Dier> sorteerGrootNaarKlein(List<Dier> ongesorteerd)
+        private List<Dier> sorteerGrootNaarKlein(List<Dier> ongesorteerd)
         {
             List<Dier> gesorteerd = new List<Dier>();
             List<Dier> temp = ongesorteerd.ToList();
@@ -87,7 +87,7 @@ namespace Opdracht_circustrein
             return gesorteerd;
         }
 
-        public Dier zoekLijstOpGrootte(List<Dier> lijst, Dier.grootte Grootte)
+        private Dier zoekLijstOpGrootte(List<Dier> lijst, Dier.grootte Grootte)
         {
             foreach (Dier dier in lijst)
             {

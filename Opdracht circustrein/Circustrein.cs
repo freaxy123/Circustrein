@@ -12,7 +12,7 @@ namespace Opdracht_circustrein
 {
     public partial class Circustrein : Form
     {
-        private Userinterface UI;
+        private Sorteren logica;
 
         public Circustrein()
         {
@@ -21,7 +21,7 @@ namespace Opdracht_circustrein
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            UI = new Userinterface();
+            logica = new Sorteren();
 
             //Comboboxes
             comboBoxSelectVoer.Items.Add(Dier.voer.planten);
@@ -38,35 +38,34 @@ namespace Opdracht_circustrein
         {
             Dier nieuwDier = new Dier((Dier.voer)Convert.ChangeType(comboBoxSelectVoer.SelectedItem, typeof(Dier.voer)), (Dier.grootte)Convert.ChangeType(comboBoxSelectGrootte.SelectedItem, typeof(Dier.grootte))); //Maak geselecteerde dier
 
-            //Voeg aantal geselecteerde dieren toes
             for(int i = 0; i < numericUpDownAantalDieren.Value; i++)
             {
-                UI.voegDierAanLijst(nieuwDier);
+                logica.voegDierAanInputLijst(nieuwDier);
             }
 
             //Fill listbox
             listBoxDieren.DataSource = null;
-            listBoxDieren.DataSource = UI.getLijstDieren();
+            listBoxDieren.DataSource = logica.getLijstInputDieren();
 
-            //Reset numeric naar 1
-            numericUpDownAantalDieren.Value = 1; //Reset
+            //Reset numeric to 1
+            numericUpDownAantalDieren.Value = 1; 
         }
 
-        private void buttonDeelWagonsIn_Click(object sender, EventArgs e)
+        public void buttonDeelWagonsIn_Click(object sender, EventArgs e)
         {
             //Maak nieuwe trein
             Trein trein = new Trein();
-            List<Dier> gesorteerd = UI.sorteerLijst(UI.getLijstDieren());
+            List<Dier> gesorteerd = logica.sorteerLijst(logica.getLijstInputDieren());
 
-            trein.vulTrein(gesorteerd); //Vul trein met aangegeven dieren
+            trein.vulTrein(gesorteerd); 
 
-            listBoxWagons.DataSource = trein.getTrein(); //Geef listbox wagonlijst
+            listBoxWagons.DataSource = trein.getTrein(); 
         }
 
         private void listBoxWagons_SelectedIndexChanged(object sender, EventArgs e)
         {
             Wagon selected = (Wagon)Convert.ChangeType(listBoxWagons.SelectedItem, typeof(Wagon));
-            progressBarWagon.Value = (10 - selected.vrijeRuimteWagon()) * 10;
+            progressBarWagon.Value = (10 - selected.getVrijeRuimte()) * 10;
 
             listBoxDierenWagon.DataSource = selected.getDieren();
         }
