@@ -7,7 +7,7 @@ namespace Opdracht_circustrein.Tests
     public class SorterenTests
     {
         [TestMethod()]
-        public void sorteerLijstTest()
+        public void sorteerLijstTest_VergelijkMetGesorteerdeLijst_ShouldBeTrue()
         {
             //Arrange 
             List<Dier> randomList = new List<Dier>();   //List out of order

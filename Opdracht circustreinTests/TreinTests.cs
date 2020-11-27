@@ -12,7 +12,7 @@ namespace Opdracht_circustrein.Tests
     public class TreinTests
     {
         [TestMethod()]
-        public void vulTreinTest_CheckJuisteAantalWagons()
+        public void vulTreinTest_CheckJuisteAantalWagons_ShouldBeTrue()
         {
             //Arrange 
             Trein trein = new Trein();
@@ -40,7 +40,7 @@ namespace Opdracht_circustrein.Tests
         }
 
         [TestMethod()]
-        public void vulTreinTest_checkAlgoritme()
+        public void vulTreinTest_checkAlgoritme_ShouldBeTrue()
         {
             //Arrange 
             Trein trein = new Trein();
