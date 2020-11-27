@@ -25,3 +25,13 @@ C:\Users\freek\source\repos\Opdracht Cirustrein\Opdracht circustrein\obj\Debug\O
 C:\Users\freek\source\repos\Opdracht Cirustrein\Opdracht circustrein\obj\Debug\Opdracht circustrein.csproj.GenerateResource.cache
 C:\Users\freek\source\repos\Opdracht Cirustrein\Opdracht circustrein\obj\Debug\Opdracht circustrein.exe
 C:\Users\freek\source\repos\Opdracht Cirustrein\Opdracht circustrein\obj\Debug\Opdracht circustrein.pdb
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\bin\Debug\Opdracht circustrein.exe.config
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\bin\Debug\Opdracht circustrein.exe
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\bin\Debug\Opdracht circustrein.pdb
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\obj\Debug\Opdracht circustrein.csprojAssemblyReference.cache
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\obj\Debug\Opdracht_circustrein.Circustrein.resources
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\obj\Debug\Opdracht_circustrein.Properties.Resources.resources
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\obj\Debug\Opdracht circustrein.csproj.GenerateResource.cache
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\obj\Debug\Opdracht circustrein.exe
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\obj\Debug\Opdracht circustrein.pdb
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustrein\obj\Debug\Opdracht circustrein.csproj.CoreCompileInputs.cache

@@ -12,32 +12,169 @@ namespace Opdracht_circustrein.Tests
     public class WagonTests
     {
         [TestMethod()]
-        public void stopDierInWagonTest()
+        public void stopDierInWagonTest_GroteVleeseterBijGrotePlanteneter_ShouldBeFalse()
         {
             //Arrange
             Wagon wagon = new Wagon(1);
-            wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.middelmatig));
-
+            wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.groot));
+            bool expected = false;
+            bool actual = true;
+            
             //Act
-            bool actual = wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.groot));
-            if(actual == false)
-                wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.groot));
+            if (wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.groot)) == false)
+                actual = false;
 
             //Assert
-            Assert.AreEqual(false, actual);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod()]
-        public void vrijeRuimteWagonTest()
+        public void stopDierInWagonTest_MiddelmatigeVleeseterBijKleinePlanteneter_ShouldBeFalse()
         {
             //Arrange
             Wagon wagon = new Wagon(1);
             wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.middelmatig));
-            wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.groot));
-            wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.klein));
+            bool expected = false;
+            bool actual = true;
+            
+            //Act
+            if (wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.klein)) == false)
+                actual = false;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void stopDierInWagonTest_MiddelmatigePlanteneterBijGroteVleeseter_ShouldBeFalse()
+        {
+            //Arrange
+            Wagon wagon = new Wagon(1);
+            wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.middelmatig));
+            bool expected = false;
+            bool actual = true;
+
+            //Act
+            if (wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.groot)) == false)
+                actual = false;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void stopDierInWagonTest_KleinePlanteneterBijKleineVleeseter_ShouldBeFalse()
+        {
+            //Arrange
+            Wagon wagon = new Wagon(1);
+            wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.klein));
+            bool expected = false;
+            bool actual = true;
+
+            //Act
+            if (wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.klein)) == false)
+                actual = false;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void stopDierInWagonTest_MediumVleeseterBijKleineVleeseter_ShouldBeFalse()
+        {
+            //Arrange
+            Wagon wagon = new Wagon(1);
+            wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.middelmatig));
+            bool expected = false;
+            bool actual = true;
+
+            //Act
+            if (wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.klein)) == false)
+                actual = false;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void stopDierInWagonTest_MiddelmatigeVleeseterBijGrotePlanteneter_ShouldBeTrue()
+        {
+            //Arrange
+            Wagon wagon = new Wagon(1);
+            wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.middelmatig));
+            bool expected = true;
+            bool actual = false;
+
+            //Act
+            if (wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.groot)) == true)
+                actual = true;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void stopDierInWagonTest_KleinePlanteneterBijMiddelmatigePlanteneter_ShouldBeTrue()
+        {
+            //Arrange
+            Wagon wagon = new Wagon(1);
+            wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.klein));
+            bool expected = true;
+            bool actual = false;
+
+            //Act
+            if (wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.middelmatig)) == true)
+                actual = true;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void stopDierInWagonTest_MiddelmatigePlanteneterBijTweeGrotePlanteneters_ShouldReturnFalse()
+        {
+            //Arrange
+            Wagon wagon = new Wagon(1);
             wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.groot));
+            wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.groot));
+            bool expected = false;
+            bool actual = true;
+
+            //Act
+            if (wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.middelmatig)) == false)
+                actual = false;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void stopDierInWagonTest_MiddelmatigePlanteneterBijVolleWagon_ShouldReturnFalse()
+        {
+            //Arrange
+            Wagon wagon = new Wagon(1);
+            wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.middelmatig));
+            wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.middelmatig));
             wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.middelmatig));
             wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.klein));
+            bool expected = false;
+            bool actual = true;
+
+            //Act
+            if (wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.middelmatig)) == false)
+                actual = false;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void vrijeRuimteWagonTest_CorrecteRuimteTeruggeven_ShouldReturn2()
+        {
+            //Arrange
+            Wagon wagon = new Wagon(1);
+            wagon.stopDierInWagon(new Dier(Dier.voer.vlees, Dier.grootte.middelmatig));
+            wagon.stopDierInWagon(new Dier(Dier.voer.planten, Dier.grootte.groot));
 
             //Act
             int actual = wagon.getVrijeRuimte();
@@ -47,8 +184,9 @@ namespace Opdracht_circustrein.Tests
             Assert.AreEqual(actual, expected);
         }
 
+
         [TestMethod()]
-        public void getDierenTest()
+        public void getDierenTest_DierenInWagonWordenCorrectBijgehouden_ShouldReturnTrue()
         {
             //Arrange
             Wagon wagon = new Wagon(1);
@@ -58,9 +196,7 @@ namespace Opdracht_circustrein.Tests
             List<Dier> expected = new List<Dier>();
             expected.Add(new Dier(Dier.voer.planten, Dier.grootte.groot));
             expected.Add(new Dier(Dier.voer.planten, Dier.grootte.middelmatig));
-
             
-
             //Act
             IReadOnlyList<Dier> actual = wagon.getDieren();
 

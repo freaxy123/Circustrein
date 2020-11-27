@@ -82,7 +82,6 @@ namespace Opdracht_circustrein
                         }
                     }
                 }
-
             }
             return gesorteerd;
         }

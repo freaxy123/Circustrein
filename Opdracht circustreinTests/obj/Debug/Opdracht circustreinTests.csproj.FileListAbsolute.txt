@@ -14,3 +14,20 @@ C:\Users\freek\source\repos\Opdracht Cirustrein\Opdracht circustreinTests\obj\De
 C:\Users\freek\source\repos\Opdracht Cirustrein\Opdracht circustreinTests\obj\Debug\Opdracht circustreinTests.csproj.CopyComplete
 C:\Users\freek\source\repos\Opdracht Cirustrein\Opdracht circustreinTests\obj\Debug\Opdracht circustreinTests.dll
 C:\Users\freek\source\repos\Opdracht Cirustrein\Opdracht circustreinTests\obj\Debug\Opdracht circustreinTests.pdb
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Opdracht circustreinTests.dll
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Opdracht circustreinTests.pdb
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Opdracht circustrein.exe
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Opdracht circustrein.pdb
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Opdracht circustrein.exe.config
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\obj\Debug\Opdracht circustreinTests.csprojAssemblyReference.cache
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\obj\Debug\Opdracht circustreinTests.csproj.CopyComplete
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\obj\Debug\Opdracht circustreinTests.dll
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\obj\Debug\Opdracht circustreinTests.pdb
+C:\Users\freek\OneDrive - Office 365 Fontys\Invidueel project\Code\Opdracht CirustreinFINAL\Opdracht circustreinTests\obj\Debug\Opdracht circustreinTests.csproj.CoreCompileInputs.cache
