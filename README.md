@@ -1,7 +1,7 @@
 
 # Oefening: Circustrein
 
-Ddeze repository bevat de broncode van de Circustrein-opdracht, een opdracht gemaakt tijdens het tweede semester (2020-2021) van de studie ICT aan Fontys Hogescholen Eindhoven, richting software engineering.
+Deze repository bevat de broncode van de Circustrein-opdracht, een opdracht gemaakt tijdens het tweede semester (2020-2021) van de studie ICT aan Fontys Hogescholen Eindhoven, richting software engineering.
 
 ## Opdracht Context
 
